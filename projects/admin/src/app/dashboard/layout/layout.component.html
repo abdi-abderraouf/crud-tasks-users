@@ -1,0 +1,31 @@
+<nav class=" navbar navbar-expand-lg navbar-light">
+  <div class="container">
+    <div class="navbar-brand" >Tasks</div>
+
+    <div class="collapse  navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/dashboard/tasks" routerLinkActive="active">All-Tasks <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/dashboard/users"  routerLinkActive="active">Users</a>
+        </li>
+      </ul>
+     <div class="nav-item d-flex">
+      <a class="nav-link" (click)="logout()">Logout</a>
+     <button mat-button [matMenuTriggerFor]="languageMenu">
+      {{ lang | translate }}
+    </button>
+    <mat-menu #languageMenu="matMenu">
+      <button mat-menu-item (click)="changeLang('fr')">Français</button>
+      <button mat-menu-item (click)="changeLang('en')">English</button>
+      <button mat-menu-item (click)="changeLang('ar')">عربي</button>
+    </mat-menu>
+  </div>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+

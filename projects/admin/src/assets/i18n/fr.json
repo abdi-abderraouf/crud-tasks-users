@@ -1,0 +1,16 @@
+{
+  "tasks":{
+    "Add Task":"Ajouter task",
+    "Complete":"terminer"
+  },
+  "users":{
+  },
+  "general":{
+     "loading":"attendez"
+  },
+  "toaster":{
+  },
+  "button":{
+
+  }
+}

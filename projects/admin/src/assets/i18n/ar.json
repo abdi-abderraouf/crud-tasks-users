@@ -1,0 +1,17 @@
+{
+  "tasks":{
+    "Add Task":"اضافة",
+    "Complete":"انتهت"
+  },
+  "users":{
+  },
+  "general":{
+    "loading":"تحمبل"
+  },
+  "toaster":{
+
+  },
+  "button":{
+
+  }
+}
