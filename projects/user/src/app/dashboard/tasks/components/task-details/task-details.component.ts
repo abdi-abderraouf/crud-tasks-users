@@ -13,6 +13,7 @@ taskDetails:any
   constructor(private route:ActivatedRoute,private service:TasksService) {
     this.route.paramMap.subscribe((res:any)=>{
       this.taskId=res.params['id']
+
     })
   }
 
@@ -23,6 +24,7 @@ taskDetails:any
   getTaskDetails(){
     this.service.taskDetails(this.taskId).subscribe((res:any)=>{
        this.taskDetails=res.tasks
+       console.log('res',res)
     })
  }
 }

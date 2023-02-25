@@ -11,8 +11,8 @@
           <img [src]="'https://crud-hiz5.onrender.com/'+ item.image" alt="">
         <h2 class="card-title">{{item.title}}</h2>
           <p class="card-subtitle mb-2 text-muted">Dead-Line Date : {{item.deadline}}</p>
-          <p class="card-text">{{item.description }}</p> 
-          <a  class="card-link"  mat-raised-button color="basic" routerLink="/tasks/{{item._id}}" routerLinkActive="router-link-active" >{{'tasks.Details'|translate}}</a>
+          <p class="card-text">{{item.description }}</p>
+          <a  class="card-link"  mat-raised-button color="basic" routerLink="/dashboard/tasks/{{item._id}}" routerLinkActive="router-link-active" >{{'tasks.Details'|translate}}</a>
           <button  mat-raised-button color="warn" (click)="complete(item)">{{'tasks.Complete'|translate}}</button>
         </div>
       </div>
